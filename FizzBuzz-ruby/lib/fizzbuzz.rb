@@ -1,6 +1,6 @@
 class Fizzbuzz
 
-	def calc ( number )
+	def convert ( number )
 		num = number
 		output = num
 		output = 'Fizz' if num % 3 == 0
