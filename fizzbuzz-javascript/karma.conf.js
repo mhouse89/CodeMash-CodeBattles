@@ -34,7 +34,13 @@ module.exports = function(config) {
     // test results reporter to use
     // possible values: 'dots', 'progress'
     // available reporters: https://npmjs.org/browse/keyword/karma-reporter
-    reporters: ['progress'],
+    reporters: ['html'],
+ 
+    htmlAllReporter: {
+      outputFile: '' + '/Users/matthewhouse/Documents/dev/CodeMash-KataBattles/fizzbuzz-javascript/output/' + 'html-all.html',
+      pageTitle: 'Unit test',
+      subPageTitle: 'Unit test with karma-html-all-reporter'
+      },
 
 
     // web server port
