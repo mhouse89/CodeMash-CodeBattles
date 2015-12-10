@@ -286,54 +286,174 @@ a {
 </div>
 <div id="div_group_2" class="example_group passed">
   <dl style="margin-left: 15px;">
-  <dt id="example_group_2" class="passed">wacky romans didn&#39;t do 0</dt>
-    <script type="text/javascript">moveProgressBar('7.1');</script>
-    <dd class="example passed"><span class="passed_spec_name">should not convert zero</span><span class='duration'>0.00398s</span></dd>
-  </dl>
-</div>
-<div id="div_group_3" class="example_group passed">
-  <dl style="margin-left: 15px;">
-  <dt id="example_group_3" class="passed">convert base symbols (I, V, X, L, C)</dt>
-    <script type="text/javascript">moveProgressBar('14.2');</script>
-    <dd class="example passed"><span class="passed_spec_name">should convert number 1 to numeral I</span><span class='duration'>0.00011s</span></dd>
-    <script type="text/javascript">moveProgressBar('21.4');</script>
-    <dd class="example passed"><span class="passed_spec_name">should convert number 5 to numeral V</span><span class='duration'>0.00006s</span></dd>
-    <script type="text/javascript">moveProgressBar('28.5');</script>
-    <dd class="example passed"><span class="passed_spec_name">should convert number 10 to numeral X</span><span class='duration'>0.00005s</span></dd>
-    <script type="text/javascript">moveProgressBar('35.7');</script>
-    <dd class="example passed"><span class="passed_spec_name">should convert number 50 to numeral L</span><span class='duration'>0.00005s</span></dd>
-    <script type="text/javascript">moveProgressBar('42.8');</script>
-    <dd class="example passed"><span class="passed_spec_name">should convert number 100 to numeral C</span><span class='duration'>0.00006s</span></dd>
-  </dl>
-</div>
-<div id="div_group_4" class="example_group passed">
-  <dl style="margin-left: 15px;">
-  <dt id="example_group_4" class="passed">convert additions</dt>
+  <dt id="example_group_2" class="passed">Converting Roman Numerals to number - </dt>
+    <script type="text/javascript">makeRed('rspec-header');</script>
+    <script type="text/javascript">makeRed('div_group_2');</script>
+    <script type="text/javascript">makeRed('example_group_2');</script>
+    <script type="text/javascript">moveProgressBar('10.0');</script>
+    <dd class="example failed">
+      <span class="failed_spec_name">should convert I to 1</span>
+      <span class="duration">0.01628s</span>
+      <div class="failure" id="failure_1">
+        <div class="message"><pre>expected: 1
+     got: 0 (using ==)</pre></div>
+        <div class="backtrace"><pre>./spec/romannumerals_spec.rb:13:in `block (3 levels) in &lt;top (required)&gt;&#39;</pre></div>
+    <pre class="ruby"><code><span class="linenum">11</span>  context "Converting Roman Numerals to number - " do
+<span class="linenum">12</span>    it "should convert I to 1" do
+<span class="offending"><span class="linenum">13</span>      @roman.convert("I").should == 1</span>
+<span class="linenum">14</span>    end
+<span class="linenum">15</span>
+<span class="linenum">16</span><span class="comment"># Install the coderay gem to get syntax highlighting</span></code></pre>
+      </div>
+    </dd>
+    <script type="text/javascript">moveProgressBar('20.0');</script>
+    <dd class="example failed">
+      <span class="failed_spec_name">should convert II to 2</span>
+      <span class="duration">0.00021s</span>
+      <div class="failure" id="failure_2">
+        <div class="message"><pre>expected: 2
+     got: 0 (using ==)</pre></div>
+        <div class="backtrace"><pre>./spec/romannumerals_spec.rb:17:in `block (3 levels) in &lt;top (required)&gt;&#39;</pre></div>
+    <pre class="ruby"><code><span class="linenum">15</span>
+<span class="linenum">16</span>    it "should convert II to 2" do
+<span class="offending"><span class="linenum">17</span>      @roman.convert("II").should == 2</span>
+<span class="linenum">18</span>    end
+<span class="linenum">19</span>
+<span class="linenum">20</span><span class="comment"># Install the coderay gem to get syntax highlighting</span></code></pre>
+      </div>
+    </dd>
+    <script type="text/javascript">moveProgressBar('30.0');</script>
+    <dd class="example failed">
+      <span class="failed_spec_name">should convert III to 3</span>
+      <span class="duration">0.00012s</span>
+      <div class="failure" id="failure_3">
+        <div class="message"><pre>expected: 3
+     got: 0 (using ==)</pre></div>
+        <div class="backtrace"><pre>./spec/romannumerals_spec.rb:21:in `block (3 levels) in &lt;top (required)&gt;&#39;</pre></div>
+    <pre class="ruby"><code><span class="linenum">19</span>
+<span class="linenum">20</span>    it "should convert III to 3" do
+<span class="offending"><span class="linenum">21</span>      @roman.convert("III").should == 3</span>
+<span class="linenum">22</span>    end
+<span class="linenum">23</span>
+<span class="linenum">24</span><span class="comment"># Install the coderay gem to get syntax highlighting</span></code></pre>
+      </div>
+    </dd>
+    <script type="text/javascript">moveProgressBar('40.0');</script>
+    <dd class="example failed">
+      <span class="failed_spec_name">should convert IV to 4</span>
+      <span class="duration">0.00011s</span>
+      <div class="failure" id="failure_4">
+        <div class="message"><pre>expected: 4
+     got: 0 (using ==)</pre></div>
+        <div class="backtrace"><pre>./spec/romannumerals_spec.rb:25:in `block (3 levels) in &lt;top (required)&gt;&#39;</pre></div>
+    <pre class="ruby"><code><span class="linenum">23</span>
+<span class="linenum">24</span>    it "should convert IV to 4" do
+<span class="offending"><span class="linenum">25</span>      @roman.convert("IV").should == 4</span>
+<span class="linenum">26</span>    end
+<span class="linenum">27</span>
+<span class="linenum">28</span><span class="comment"># Install the coderay gem to get syntax highlighting</span></code></pre>
+      </div>
+    </dd>
     <script type="text/javascript">moveProgressBar('50.0');</script>
-    <dd class="example passed"><span class="passed_spec_name">should convert number 2 to numeral II</span><span class='duration'>0.00006s</span></dd>
-    <script type="text/javascript">moveProgressBar('57.1');</script>
-    <dd class="example passed"><span class="passed_spec_name">should convert number 3 to numeral III</span><span class='duration'>0.00005s</span></dd>
-    <script type="text/javascript">moveProgressBar('64.2');</script>
-    <dd class="example passed"><span class="passed_spec_name">should convert number 8 to numeral VIII</span><span class='duration'>0.00005s</span></dd>
-    <script type="text/javascript">moveProgressBar('71.4');</script>
-    <dd class="example passed"><span class="passed_spec_name">should convert number 27 to numeral XXVII</span><span class='duration'>0.00007s</span></dd>
-  </dl>
-</div>
-<div id="div_group_5" class="example_group passed">
-  <dl style="margin-left: 15px;">
-  <dt id="example_group_5" class="passed">convert subtractions</dt>
-    <script type="text/javascript">moveProgressBar('78.5');</script>
-    <dd class="example passed"><span class="passed_spec_name">should convert number 4 to numeral IV</span><span class='duration'>0.00006s</span></dd>
-    <script type="text/javascript">moveProgressBar('85.7');</script>
-    <dd class="example passed"><span class="passed_spec_name">should convert number 9 to numeral IX</span><span class='duration'>0.00008s</span></dd>
-    <script type="text/javascript">moveProgressBar('92.8');</script>
-    <dd class="example passed"><span class="passed_spec_name">should convert number 40 to numeral XL</span><span class='duration'>0.00008s</span></dd>
+    <dd class="example failed">
+      <span class="failed_spec_name">should convert V to 5</span>
+      <span class="duration">0.00011s</span>
+      <div class="failure" id="failure_5">
+        <div class="message"><pre>expected: 5
+     got: 0 (using ==)</pre></div>
+        <div class="backtrace"><pre>./spec/romannumerals_spec.rb:29:in `block (3 levels) in &lt;top (required)&gt;&#39;</pre></div>
+    <pre class="ruby"><code><span class="linenum">27</span>
+<span class="linenum">28</span>    it "should convert V to 5" do
+<span class="offending"><span class="linenum">29</span>      @roman.convert("V").should == 5</span>
+<span class="linenum">30</span>    end
+<span class="linenum">31</span>
+<span class="linenum">32</span><span class="comment"># Install the coderay gem to get syntax highlighting</span></code></pre>
+      </div>
+    </dd>
+    <script type="text/javascript">moveProgressBar('60.0');</script>
+    <dd class="example failed">
+      <span class="failed_spec_name">should convert VI to 6</span>
+      <span class="duration">0.00010s</span>
+      <div class="failure" id="failure_6">
+        <div class="message"><pre>expected: 6
+     got: 0 (using ==)</pre></div>
+        <div class="backtrace"><pre>./spec/romannumerals_spec.rb:33:in `block (3 levels) in &lt;top (required)&gt;&#39;</pre></div>
+    <pre class="ruby"><code><span class="linenum">31</span>
+<span class="linenum">32</span>    it "should convert VI to 6" do
+<span class="offending"><span class="linenum">33</span>      @roman.convert("VI").should == 6</span>
+<span class="linenum">34</span>    end
+<span class="linenum">35</span>
+<span class="linenum">36</span><span class="comment"># Install the coderay gem to get syntax highlighting</span></code></pre>
+      </div>
+    </dd>
+    <script type="text/javascript">moveProgressBar('70.0');</script>
+    <dd class="example failed">
+      <span class="failed_spec_name">should convert VII to 7</span>
+      <span class="duration">0.00010s</span>
+      <div class="failure" id="failure_7">
+        <div class="message"><pre>expected: 7
+     got: 0 (using ==)</pre></div>
+        <div class="backtrace"><pre>./spec/romannumerals_spec.rb:37:in `block (3 levels) in &lt;top (required)&gt;&#39;</pre></div>
+    <pre class="ruby"><code><span class="linenum">35</span>
+<span class="linenum">36</span>    it "should convert VII to 7" do
+<span class="offending"><span class="linenum">37</span>      @roman.convert("VII").should == 7</span>
+<span class="linenum">38</span>    end
+<span class="linenum">39</span>
+<span class="linenum">40</span><span class="comment"># Install the coderay gem to get syntax highlighting</span></code></pre>
+      </div>
+    </dd>
+    <script type="text/javascript">moveProgressBar('80.0');</script>
+    <dd class="example failed">
+      <span class="failed_spec_name">should convert VIII to 8</span>
+      <span class="duration">0.00010s</span>
+      <div class="failure" id="failure_8">
+        <div class="message"><pre>expected: 8
+     got: 0 (using ==)</pre></div>
+        <div class="backtrace"><pre>./spec/romannumerals_spec.rb:41:in `block (3 levels) in &lt;top (required)&gt;&#39;</pre></div>
+    <pre class="ruby"><code><span class="linenum">39</span>
+<span class="linenum">40</span>    it "should convert VIII to 8" do
+<span class="offending"><span class="linenum">41</span>      @roman.convert("VIII").should == 8</span>
+<span class="linenum">42</span>    end
+<span class="linenum">43</span>
+<span class="linenum">44</span><span class="comment"># Install the coderay gem to get syntax highlighting</span></code></pre>
+      </div>
+    </dd>
+    <script type="text/javascript">moveProgressBar('90.0');</script>
+    <dd class="example failed">
+      <span class="failed_spec_name">should convert IX to 9</span>
+      <span class="duration">0.00010s</span>
+      <div class="failure" id="failure_9">
+        <div class="message"><pre>expected: 9
+     got: 0 (using ==)</pre></div>
+        <div class="backtrace"><pre>./spec/romannumerals_spec.rb:45:in `block (3 levels) in &lt;top (required)&gt;&#39;</pre></div>
+    <pre class="ruby"><code><span class="linenum">43</span>
+<span class="linenum">44</span>    it "should convert IX to 9" do
+<span class="offending"><span class="linenum">45</span>      @roman.convert("IX").should == 9</span>
+<span class="linenum">46</span>    end
+<span class="linenum">47</span>
+<span class="linenum">48</span><span class="comment"># Install the coderay gem to get syntax highlighting</span></code></pre>
+      </div>
+    </dd>
     <script type="text/javascript">moveProgressBar('100.0');</script>
-    <dd class="example passed"><span class="passed_spec_name">should convert number 44 to numeral XLIV</span><span class='duration'>0.00007s</span></dd>
+    <dd class="example failed">
+      <span class="failed_spec_name">should convert X to X</span>
+      <span class="duration">0.00010s</span>
+      <div class="failure" id="failure_10">
+        <div class="message"><pre>expected: 10
+     got: 0 (using ==)</pre></div>
+        <div class="backtrace"><pre>./spec/romannumerals_spec.rb:49:in `block (3 levels) in &lt;top (required)&gt;&#39;</pre></div>
+    <pre class="ruby"><code><span class="linenum">47</span>
+<span class="linenum">48</span>    it "should convert X to X" do
+<span class="offending"><span class="linenum">49</span>      @roman.convert("X").should == 10</span>
+<span class="linenum">50</span>    end
+<span class="linenum">51</span>
+<span class="linenum">52</span><span class="comment"># Install the coderay gem to get syntax highlighting</span></code></pre>
+      </div>
+    </dd>
   </dl>
 </div>
-<script type="text/javascript">document.getElementById('duration').innerHTML = "Finished in <strong>0.00625 seconds</strong>";</script>
-<script type="text/javascript">document.getElementById('totals').innerHTML = "14 examples, 0 failures";</script>
+<script type="text/javascript">document.getElementById('duration').innerHTML = "Finished in <strong>0.02662 seconds</strong>";</script>
+<script type="text/javascript">document.getElementById('totals').innerHTML = "10 examples, 10 failures";</script>
 </div>
 </div>
 </body>
