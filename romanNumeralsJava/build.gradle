@@ -14,4 +14,9 @@ test {
     testLogging {
 	exceptionFormat = 'full'
     }
+    exclude '**/accept/*'
+}
+
+task accept (type:Test) {
+    include '**/accept/*'
 }
