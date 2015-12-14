@@ -1,3 +1,4 @@
 build
 .gradle
 *.swp
+FizzBuzz-ruby/reports/rspec_results.html
