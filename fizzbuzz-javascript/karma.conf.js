@@ -15,8 +15,7 @@ module.exports = function(config) {
 
     // list of files / patterns to load in the browser
     files: [
-      'spec/*.js',
-      'spec/fizzbuzz_spec.js',
+      'spec/accept/*.js',
       'src/fizzbuzz.js'
     ],
 

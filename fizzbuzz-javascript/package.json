@@ -12,6 +12,6 @@
   },
   "preferGlobal": true,
   "scripts": {
-    "test": "karma start > random.txt"
+    "test": "./test.sh"
   }
 }
