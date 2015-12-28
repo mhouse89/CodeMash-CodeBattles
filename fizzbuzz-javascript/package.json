@@ -7,6 +7,11 @@
 		"karma": "~0.10",
 		"jasmine": "*",
 		"karma-jasmine": "*",
-		"karma-html-all-reporter": "~0.1.0"
+		"karma-html-all-reporter": "~0.1.0",
+		"karma-chrome-launcher": "*"
+	},
+
+	"scripts": {
+		"test": "karma start --reporters html-all"
 	}
 }
