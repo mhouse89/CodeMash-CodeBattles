@@ -1,17 +1,17 @@
 {
-
-	"name": "fizzbuzz-javascript",
-	"description" : "fbjs",
-
-	"dependencies": {
-		"karma": "~0.10",
-		"jasmine": "*",
-		"karma-jasmine": "*",
-		"karma-html-all-reporter": "~0.1.0",
-		"karma-chrome-launcher": "*"
-	},
-
-	"scripts": {
-		"test": "karma start --reporters html-all"
-	}
+  "name": "fizzbuzz-javascript",
+  "description": "fbjs",
+  "dependencies": {
+    "karma": "~0.13",
+    "jasmine": "*",
+    "karma-jasmine": "~0.1",
+    "karma-html-all-reporter": "~0.1.0"
+  },
+  "preferGlobal": true,
+  "scripts": {
+    "test": "karma start --reporters html-all"
+  },
+  "devDependencies": {
+    "karma-chrome-launcher": "^0.2.2"
+  }
 }
