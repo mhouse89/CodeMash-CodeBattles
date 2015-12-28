@@ -1,29 +1,23 @@
 describe('When FizzBuzz is given a value: ', function(){
 
   var fizzbuzz;
+  var fizzbuzzAccept;
 
   beforeEach(function(){
     fizzbuzz = new Fizzbuzz();
+    fizzbuzzAccept = new FizzbuzzAccept();
   });
 
-  describe('convert returns', function(){
+  var testParams = new Array(100);
+  var expectedResult;
 
-    it('"Fizz" when the number is divisible by 3', function(){
-      expect(fizzbuzz.convert(3)).toEqual("Fizz");
-    });
-
-    it('"Buzz" when the number is divisible by 5', function(){
-      expect(fizzbuzz.convert(5)).toEqual("Buzz");
-    });
-
-    it('"FizzBizz" when the number is divisible by 15', function(){
-      expect(fizzbuzz.convert(15)).toEqual("FizzBuzz");
-    });
-
-    it('the number given when it is not divisible by 3, 5 or 15', function(){
-      expect(fizzbuzz.convert(1)).toEqual(1)
-    });
-  });
-
+  for (var i = 0; i < testParams.length; i++) {
+    (function(i) {
+      it('knows how to process ' + (i+1), function () {
+        expectedResult = fizzbuzzAccept.convert(i+1);
+        expect(fizzbuzz.convert(i+1)).toEqual(expectedResult);
+      });
+    })(i);
+};
 
 });
