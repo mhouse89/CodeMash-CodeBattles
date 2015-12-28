@@ -52,7 +52,7 @@ describe('When FizzBuzz is given a value: ', function(){
     });
 
     it('the number given when it is not divisible by 3, 5 or 15', function(){
-      expect(fizzbuzz.convert(1)).toEqual(1)
+      expect(fizzbuzz.convert(1)).toEqual(2)
     });
   });
 
