@@ -1,0 +1,12 @@
+{
+
+	"name": "fizzbuzz-javascript",
+	"description" : "fbjs",
+
+	"dependencies": {
+		"karma": "~0.10",
+		"jasmine": "*",
+		"karma-jasmine": "*",
+		"karma-html-all-reporter": "~0.1.0"
+	}
+}
