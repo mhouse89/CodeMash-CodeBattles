@@ -1,4 +1,4 @@
-// Unit Tests
+// Acceptance tests
 describe('Roman Numerals', function() {
   //var romanNumerals = require('./lib/rn.js');
   var numerals;
