@@ -1,12 +1,5 @@
 # Included task to print output to html
 task :default => [:spec]
-
-begin
-  require 'rspec/core/rake_task'
-  RSpec::Core::RakeTask.new(:spec)
-rescue LoadError
-end
-
 require 'rspec/core/rake_task'
 
 RSpec::Core::RakeTask.new(:spec) do |t|

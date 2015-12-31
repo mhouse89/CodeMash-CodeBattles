@@ -1,5 +1,5 @@
 // Karma configuration
-// Generated on Mon Dec 07 2015 13:09:18 GMT-0500 (EST)
+// Generated on Mon Dec 28 2015 10:29:47 GMT-0500 (EST)
 
 module.exports = function(config) {
   config.set({
@@ -15,8 +15,8 @@ module.exports = function(config) {
 
     // list of files / patterns to load in the browser
     files: [
-      'src/*.js',
-      'spec/*.js'
+      'spec/accept/*.js',
+      'src/fizzbuzz.js'
     ],
 
 
@@ -34,14 +34,7 @@ module.exports = function(config) {
     // test results reporter to use
     // possible values: 'dots', 'progress'
     // available reporters: https://npmjs.org/browse/keyword/karma-reporter
-    reporters: ['html'],
- 
-    htmlAllReporter: {
-      outputFile: '' + '/Users/matthewhouse/Documents/dev/CodeMash-KataBattles/fizzbuzz-javascript/output/' + 'html-all.html',
-      pageTitle: 'Unit test',
-      subPageTitle: 'Unit test with karma-html-all-reporter'
-      },
-
+    reporters: ['progress'],
 
     // web server port
     port: 9876,
@@ -62,7 +55,7 @@ module.exports = function(config) {
 
     // start these browsers
     // available browser launchers: https://npmjs.org/browse/keyword/karma-launcher
-    browsers: ['Chrome'],
+    browsers: ['PhantomJS'],
 
 
     // Continuous Integration mode
@@ -70,7 +63,8 @@ module.exports = function(config) {
     singleRun: false,
 
     // Concurrency level
-    // how many browser should be started simultanous
+    // how many browser should be started simultaneous
     concurrency: Infinity
+
   })
 }

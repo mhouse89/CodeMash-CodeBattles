@@ -1,6 +1,6 @@
 {
-  "name": "RomanNumeralsJS",
-  "description": "rnjs",
+  "name": "fizzbuzz-javascript",
+  "description": "fbjs",
   "devDependencies": {
     "jasmine": "*",
     "karma": "~0.13",
