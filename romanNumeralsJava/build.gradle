@@ -20,3 +20,15 @@ test {
 task accept (type:Test) {
     include '**/accept/*'
 }
+
+task report {
+    def slurper = new XmlSlurper()
+    slurper.setFeature("http://apache.org/xml/features/disallow-doctype-decl", false)
+    def html = slurper.parse('build/reports/tests/index.html')
+    html.'**'.findAll{it.@class == 'percent'}.each{
+	println ('Acceptance tests are ' + it + ' complete')
+	def number = it.toString().replaceAll('%','')
+	println (['curl', '-X', 'PUT', "http://127.0.0.1:8081/percent/racer1/${number}"].execute().text)	
+
+    }
+}
