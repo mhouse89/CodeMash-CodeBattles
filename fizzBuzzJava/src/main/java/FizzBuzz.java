@@ -1,9 +1,9 @@
 package kataBattle.fizzbuzz;
 
-class FizzBuzz {
+public class FizzBuzz {
 
   public static String process(int input) {
-    return "";
+    return "1";
   }
 
 }
